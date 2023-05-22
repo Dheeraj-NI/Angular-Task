@@ -1,0 +1,23 @@
+<!-- {{text | ellipse }}
+<br>
+{{"Length of the text is " + exts}} -->
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>UserName</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let data of registerData">
+      <td>{{ data.id }}</td>
+      <td>{{ data.userName }}</td>
+      <td>{{ data.firstName }}</td>
+      <td>{{ data.lastName }}</td>
+      <td>{{ data.age }}</td>
+    </tr>
+  </tbody>
+</table>

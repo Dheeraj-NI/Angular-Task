@@ -1,0 +1,45 @@
+<div class="box" *ngIf="customer">
+    <h3>Edit Profile</h3>
+  <table >
+    <tr>
+      <th>Name :</th>
+      <td><input [(ngModel)]="customer.name" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Email :</th>
+      <td><input [(ngModel)]="customer.email_Address" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Age :</th>
+      <td><input [(ngModel)]="customer.age" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Gender :</th>
+      <td><input [(ngModel)]="customer.gender" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Contact No. :</th>
+      <td><input [(ngModel)]="customer.phone_Number" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Address :</th>
+      <td><input [(ngModel)]="customer.address" type="text" /></td>
+    </tr>
+    <tr>
+      <th>DOB :</th>
+      <td><input [(ngModel)]="customer.date_of_Birth" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Language :</th>
+      <td><input [(ngModel)]="customer.preferred_Language" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Occupation :</th>
+      <td><input [(ngModel)]="customer.occupation" type="text" /></td>
+    </tr>
+    <tr>
+      <th>Action</th>
+      <td><button (click)="updateCustomer()">Update</button></td>
+    </tr>
+  </table>
+</div>

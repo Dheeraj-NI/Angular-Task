@@ -1,0 +1,43 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "dummydata": [
+    {
+      "id": 1,
+      "userName": "Tom123",
+      "firstName": "Tommy",
+      "lastName": "Doe",
+      "age": "20"
+    },
+    {
+      "id": 2,
+      "userName": "Jerry123",
+      "firstName": "Jerry",
+      "lastName": "Sam",
+      "age": "24"
+    },
+    {
+      "id": 3,
+      "userName": "Harry456",
+      "firstName": "Harry",
+      "lastName": "Koe",
+      "age": "17"
+    }
+  ],
+  "register": []
+}

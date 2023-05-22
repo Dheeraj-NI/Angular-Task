@@ -1,0 +1,7 @@
+<div>
+  <p>{{ "Given array => [ " + words + " ]" }}</p>
+  <button (click)="convertToTitleCase()">Convert to Title Case</button>
+  <ul>
+    <li *ngFor="let word of titleCasedWords">{{ word }}</li>
+  </ul>
+</div>

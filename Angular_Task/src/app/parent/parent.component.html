@@ -1,0 +1,40 @@
+<table>
+    <thead class="heading"> 
+        
+            <th colspan="11" class="table heading">Customer Details</th>
+        
+        
+  <tr>
+    <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Contact No.</th>
+      <th>Address</th>
+      <th>DOB</th>
+      <th>Language</th>
+      <th>Occupation</th>
+      <th>Action</th>
+    </tr>
+</thead>
+    <tr *ngFor="let customer of customers" class="bodyelement">
+    <td>{{ customer.id }}</td>
+    <td>{{ customer.name }}</td>
+    <td>{{ customer.email_Address }}</td>
+    <td>{{ customer.age }}</td>
+    <td>{{ customer.gender }}</td>
+    <td>{{ customer.phone_Number }}</td>
+    <td>{{ customer.address }}</td>
+    <td>{{ customer.date_of_Birth }}</td>
+    <td>{{ customer.preferred_Language }}</td>
+    <td>{{ customer.occupation }}</td>
+    <td><button (click)="onEditCustomer(customer)">Edit</button></td>
+  </tr>
+</table>
+
+<app-child
+  *ngIf="selectedCustomer"
+  [customer]="selectedCustomer"
+  (customerUpdated)="onCustomerUpdated($event)"
+></app-child>

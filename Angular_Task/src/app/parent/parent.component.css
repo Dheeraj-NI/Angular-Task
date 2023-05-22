@@ -1,0 +1,17 @@
+th {
+    border: 2px solid black;
+    text-align: center;
+    padding: 7px;
+}
+td{
+    
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px ;
+}
+.bodyelement{
+border: 1px solid black;
+}
+.table{
+    font-size: 25px;
+}
