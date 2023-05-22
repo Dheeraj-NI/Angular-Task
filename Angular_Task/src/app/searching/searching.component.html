@@ -1,0 +1,34 @@
+<table>
+  <thead class="heading">
+    <th colspan="6" class="table heading">Customer Details</th>
+    <th colspan="1"><input
+        type="text"
+        placeholder="Search by username or email"
+        (input)="search($event)"
+      /></th>
+    
+
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Email</th>
+
+      <th>Gender</th>
+      <th>Contact No.</th>
+
+      <th>Language</th>
+      <th>Occupation</th>
+    </tr>
+  </thead>
+  <tr *ngFor="let customer of filteredUsers" class="bodyelement">
+    <td>{{ customer.id }}</td>
+    <td>{{ customer.username }}</td>
+    <td>{{ customer.email_Address }}</td>
+
+    <td>{{ customer.gender }}</td>
+    <td>{{ customer.phone_Number }}</td>
+
+    <td>{{ customer.preferred_Language }}</td>
+    <td>{{ customer.occupation }}</td>
+  </tr>
+</table>

@@ -29,6 +29,7 @@ import { MatInputModule } from '@angular/material/input';
 
 import { MatRadioModule } from '@angular/material/radio';
 import { MaterialDataTabelComponent } from './material-data-tabel/material-data-tabel.component';
+import { SearchingComponent } from './searching/searching.component';
 
 @NgModule({
   declarations: [
@@ -46,6 +47,7 @@ import { MaterialDataTabelComponent } from './material-data-tabel/material-data-
     LoginComponent,
     HomeComponent,
     MaterialDataTabelComponent,
+    SearchingComponent,
     
   ],
   imports: [

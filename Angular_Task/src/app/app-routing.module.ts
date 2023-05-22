@@ -15,6 +15,7 @@ import { RegisterComponent } from './register/register.component';
 import { HomeComponent } from './home/home.component';
 import { authenticateGuard } from './Core/authenticate.guard';
 import { MaterialDataTabelComponent } from './material-data-tabel/material-data-tabel.component';
+import { SearchingComponent } from './searching/searching.component';
 
 const routes: Routes = [
   { path: 'directive_home', component: ModuleHomeComponent },
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'parent', component: ParentComponent },
   { path: 'child', component: ChildComponent },
   { path: 'pipe', component: PipeComponent },
+  { path: 'search', component: SearchingComponent },
   
 
   {
