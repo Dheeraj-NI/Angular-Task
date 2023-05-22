@@ -7,8 +7,7 @@ import { ApiServiceService } from '../Core/api-service.service';
   styleUrls: ['./web-api.component.css'],
 })
 export class WebApiComponent implements OnInit {
-  text = "kdjfkjdfhfkfjhafhsdkgdcuisuifuwrwuiqe";
-  exts = this.text.length;
+  
   
   constructor(private api: ApiServiceService) {}
 
