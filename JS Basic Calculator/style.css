@@ -1,0 +1,23 @@
+.boxer {
+  /* border: 2px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 93px;
+}
+input {
+  /* position: relative;  */
+  /* margin-left: 60px; */
+  justify-content: center;
+  /* padding:2px ; */
+  font-size: 20px;
+  width: 300px;
+  margin-left: 5px;
+}
+.button {
+  /* text-align: center; */
+  width: 53px;
+}
+.tall {
+  /* height: 60px; */
+}
