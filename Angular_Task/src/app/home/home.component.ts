@@ -17,14 +17,13 @@ export class HomeComponent implements OnInit {
   
 
   logout() {
-    // let removedata = JSON.parse(localStorage.getItem('myregis') || '')
+    let removedata = JSON.parse(localStorage.getItem('myregis') || '')
     localStorage.removeItem('myregis')
     this.route.navigate(['/login']);
 
 }
   ngOnInit(){
-    // let userName = JSON.parse(localStorage.getItem('myregis' || ''));
-    // console.log( userName.value)
+   
   }
 
 }

@@ -1,0 +1,5 @@
+<div [class.dark]="isDarkTheme" [class.light]="!isDarkTheme">
+    <h1>Angular Theme Switcher</h1>
+    <p>Current theme: {{ isDarkTheme ? 'Dark' : 'Light' }}</p>
+    <span><button (click)="toggleTheme()">Toggle Theme</button></span>
+</div>

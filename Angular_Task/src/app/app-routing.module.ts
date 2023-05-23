@@ -16,6 +16,7 @@ import { HomeComponent } from './home/home.component';
 import { authenticateGuard } from './Core/authenticate.guard';
 import { MaterialDataTabelComponent } from './material-data-tabel/material-data-tabel.component';
 import { SearchingComponent } from './searching/searching.component';
+import { ThemeComponent } from './theme/theme.component';
 
 const routes: Routes = [
   { path: 'directive_home', component: ModuleHomeComponent },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'child', component: ChildComponent },
   { path: 'pipe', component: PipeComponent },
   { path: 'search', component: SearchingComponent },
+  { path: 'theme', component: ThemeComponent },
   
 
   {

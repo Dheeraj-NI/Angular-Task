@@ -31,7 +31,7 @@ export class LoginComponent implements OnInit {
         );
       });
 
-      console.log(register + 'helllooooooo');
+      
       if (register) {
         localStorage.setItem('myregis', JSON.stringify(register));
         this.route.navigate(['/home']);

@@ -23,13 +23,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
-
 import { MatButtonModule } from '@angular/material/button';
 import { MatInputModule } from '@angular/material/input';
-
 import { MatRadioModule } from '@angular/material/radio';
 import { MaterialDataTabelComponent } from './material-data-tabel/material-data-tabel.component';
 import { SearchingComponent } from './searching/searching.component';
+import { ThemeComponent } from './theme/theme.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +47,8 @@ import { SearchingComponent } from './searching/searching.component';
     HomeComponent,
     MaterialDataTabelComponent,
     SearchingComponent,
+    ThemeComponent,
+    
     
   ],
   imports: [
