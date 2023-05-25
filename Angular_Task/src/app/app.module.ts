@@ -29,6 +29,9 @@ import { MatRadioModule } from '@angular/material/radio';
 import { MaterialDataTabelComponent } from './material-data-tabel/material-data-tabel.component';
 import { SearchingComponent } from './searching/searching.component';
 import { ThemeComponent } from './theme/theme.component';
+import { DatatableComponent } from './datatable/datatable.component';
+import { DataTablesModule } from 'angular-datatables';
+import { TimerComponent } from './timer/timer.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +51,8 @@ import { ThemeComponent } from './theme/theme.component';
     MaterialDataTabelComponent,
     SearchingComponent,
     ThemeComponent,
+    DatatableComponent,
+    TimerComponent,
     
     
   ],
@@ -65,6 +70,7 @@ import { ThemeComponent } from './theme/theme.component';
     MatTableModule,
     MatButtonModule,
     MatRadioModule,
+    DataTablesModule
   ],
   providers: [ApiServiceService, Permission, LoginComponent],
   bootstrap: [AppComponent],

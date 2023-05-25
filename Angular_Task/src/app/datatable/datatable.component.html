@@ -1,0 +1,23 @@
+<table  datatable [dtOptions]="dtOptions"  [dtTrigger]="dtTrigger" >
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>FirstName</th>
+      <th>LastName</th>
+      <th>Email ID</th>
+      <th>Gender</th>
+      <th>Phone number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let info of data">
+      <td>{{ info.id }}</td>
+      <td>{{ info.first_name }}</td>
+      <td>{{ info.last_name }}</td>
+      <td>{{ info.email }}</td>
+      <td>{{ info.gender }}</td>
+      <td>{{ info.phone_number }}</td>
+    </tr>
+  </tbody>
+ 
+</table>

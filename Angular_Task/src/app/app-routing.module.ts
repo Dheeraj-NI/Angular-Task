@@ -17,6 +17,8 @@ import { authenticateGuard } from './Core/authenticate.guard';
 import { MaterialDataTabelComponent } from './material-data-tabel/material-data-tabel.component';
 import { SearchingComponent } from './searching/searching.component';
 import { ThemeComponent } from './theme/theme.component';
+import { DatatableComponent } from './datatable/datatable.component';
+import { TimerComponent } from './timer/timer.component';
 
 const routes: Routes = [
   { path: 'directive_home', component: ModuleHomeComponent },
@@ -35,13 +37,8 @@ const routes: Routes = [
   { path: 'pipe', component: PipeComponent },
   { path: 'search', component: SearchingComponent },
   { path: 'theme', component: ThemeComponent },
-  
-
-  {
-    path: '',
-    redirectTo: '/startup',
-    pathMatch: 'full',
-  },
+  { path: 'datatable', component: DatatableComponent },
+  { path: 'timer', component: TimerComponent },
 ];
 
 @NgModule({
