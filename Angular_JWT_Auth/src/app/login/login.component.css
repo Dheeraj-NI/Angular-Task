@@ -1,0 +1,31 @@
+.box{
+    align-items: center;
+  position: absolute;
+  justify-content: center;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: #fff;
+  
+  border: 2px solid black;
+  border-radius: 7px;
+  
+}
+.label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.register-link{
+    font-weight: bold;
+    color: #00fff2;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+form{
+    
+    padding: 25px;
+    
+   
+  }

@@ -1,21 +1,4 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  },
   "dummydata": [
     {
       "id": 1,
@@ -170,6 +153,188 @@
       "date_of_Birth": "December 12, 1998",
       "preferred_Language": "English",
       "occupation": "Student"
+    }
+  ],
+  "rxjs_searching": [
+    {
+      "id": 1,
+      "username": "Monroe",
+      "gender": "Male",
+      "email_Address": "mbertelet0@zimbio.com",
+      "phone_Number": "7328659645",
+      "prefered_Language": "Swahili",
+      "occupation": "General Manager"
+    },
+    {
+      "id": 2,
+      "username": "Gauthier",
+      "gender": "Male",
+      "email_Address": "gduggary1@msu.edu",
+      "phone_Number": "0480230064",
+      "prefered_Language": "Haitian Creole",
+      "occupation": "Health Coach I"
+    },
+    {
+      "id": 3,
+      "username": "Vail",
+      "gender": "Male",
+      "email_Address": "vgallienne2@sun.com",
+      "phone_Number": "2548541819",
+      "prefered_Language": "Czech",
+      "occupation": "Research Associate"
+    },
+    {
+      "id": 4,
+      "username": "Ignacius",
+      "gender": "Male",
+      "email_Address": "icicculini3@cnet.com",
+      "phone_Number": "9973715241",
+      "prefered_Language": "Nepali",
+      "occupation": "Software Test Engineer IV"
+    },
+    {
+      "id": 5,
+      "username": "Allyn",
+      "gender": "Male",
+      "email_Address": "aacors4@shop-pro.jp",
+      "phone_Number": "1303351595",
+      "prefered_Language": "French",
+      "occupation": "Recruiting Manager"
+    },
+    {
+      "id": 6,
+      "username": "Odele",
+      "gender": "Female",
+      "email_Address": "okolakovic5@alibaba.com",
+      "phone_Number": "7372556619",
+      "prefered_Language": "Tamil",
+      "occupation": "Software Engineer I"
+    },
+    {
+      "id": 7,
+      "username": "Leonelle",
+      "gender": "Female",
+      "email_Address": "lship6@cocolog-nifty.com",
+      "phone_Number": "9724897591",
+      "prefered_Language": "Yiddish",
+      "occupation": "Automation Specialist II"
+    },
+    {
+      "id": 8,
+      "username": "Felicle",
+      "gender": "Female",
+      "email_Address": "frowland7@china.com.cn",
+      "phone_Number": "8267214658",
+      "prefered_Language": "Northern Sotho",
+      "occupation": "Financial Advisor"
+    },
+    {
+      "id": 9,
+      "username": "Herminia",
+      "gender": "Female",
+      "email_Address": "hkilbane8@guardian.co.uk",
+      "phone_Number": "6565963819",
+      "prefered_Language": "Catalan",
+      "occupation": "Cost Accountant"
+    },
+    {
+      "id": 10,
+      "username": "Raina",
+      "gender": "Female",
+      "email_Address": "rfontell9@nationalgeographic.com",
+      "phone_Number": "6884673346",
+      "prefered_Language": "Macedonian",
+      "occupation": "Staff Accountant I"
+    },
+    {
+      "id": 11,
+      "username": "Nico",
+      "gender": "Male",
+      "email_Address": "nganea@unicef.org",
+      "phone_Number": "9709734423",
+      "prefered_Language": "Arabic",
+      "occupation": "Senior Developer"
+    },
+    {
+      "id": 12,
+      "username": "Bethany",
+      "gender": "Female",
+      "email_Address": "barmorb@csmonitor.com",
+      "phone_Number": "8642891076",
+      "prefered_Language": "Tok Pisin",
+      "occupation": "Account Representative III"
+    },
+    {
+      "id": 13,
+      "username": "David",
+      "gender": "Male",
+      "email_Address": "djarnellc@qq.com",
+      "phone_Number": "1153190079",
+      "prefered_Language": "Swati",
+      "occupation": "Account Representative IV"
+    },
+    {
+      "id": 14,
+      "username": "Nora",
+      "gender": "Female",
+      "email_Address": "ncrotchd@unc.edu",
+      "phone_Number": "2942936258",
+      "prefered_Language": "Papiamento",
+      "occupation": "Physical Therapy Assistant"
+    },
+    {
+      "id": 15,
+      "username": "Alric",
+      "gender": "Male",
+      "email_Address": "aschultese@1und1.de",
+      "phone_Number": "9738088003",
+      "prefered_Language": "Chinese",
+      "occupation": "Marketing Manager"
+    },
+    {
+      "id": 16,
+      "username": "Lavena",
+      "gender": "Agender",
+      "email_Address": "llafflinaf@army.mil",
+      "phone_Number": "0759379688",
+      "prefered_Language": "Greek",
+      "occupation": "Administrative Assistant III"
+    },
+    {
+      "id": 17,
+      "username": "Hussein",
+      "gender": "Male",
+      "email_Address": "hphillcoxg@nps.gov",
+      "phone_Number": "2269721640",
+      "prefered_Language": "Indonesian",
+      "occupation": "Account Coordinator"
+    },
+    {
+      "id": 18,
+      "username": "Merell",
+      "gender": "Male",
+      "email_Address": "mshitliffeh@narod.ru",
+      "phone_Number": "6338406609",
+      "prefered_Language": "Afrikaans",
+      "occupation": "Dental Hygienist"
+    },
+    {
+      "id": 19,
+      "username": "Walliw",
+      "gender": "Female",
+      "email_Address": "whaingei@slashdot.org",
+      "phone_Number": "7938118508",
+      "prefered_Language": "Finnish",
+      "occupation": "Design Engineer"
+    },
+    {
+      "id": 20,
+      "username": "Raychel",
+      "gender": "Female",
+      "email_Address": "rborgnolj@4shared.com",
+      "phone_Number": "6888363090",
+      "prefered_Language": "Kannada",
+      "occupation": "Research Assistant II"
     }
   ],
   "Datatable": [
@@ -975,4 +1140,3 @@
     }
   ]
 }
-  

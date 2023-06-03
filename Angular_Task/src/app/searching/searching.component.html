@@ -31,4 +31,15 @@
     <td>{{ customer.preferred_Language }}</td>
     <td>{{ customer.occupation }}</td>
   </tr>
+  <tr *ngFor="let info of data" class="bodyelement">
+    <td>{{ info.id }}</td>
+    <td>{{ info.username }}</td>
+    <td>{{ info.email_Address }}</td>
+
+    <td>{{ info.gender }}</td>
+    <td>{{ info.phone_Number }}</td>
+
+    <td>{{ info.preferred_Language }}</td>
+    <td>{{ info.occupation }}</td>
+  </tr>
 </table>

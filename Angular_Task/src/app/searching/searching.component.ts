@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { Subject, debounceTime, distinctUntilChanged, map } from 'rxjs';
 
@@ -12,9 +13,9 @@ export interface Customer {
   occupation: string;
 }
 
-const  users: Customer[] = [
+const users: Customer[] = [
   {
-    id: "1",
+    id: '1',
     username: 'John',
     gender: 'Male',
     email_Address: 'john.smith@example.com',
@@ -23,7 +24,7 @@ const  users: Customer[] = [
     occupation: 'Software Engineer',
   },
   {
-    id: "2",
+    id: '2',
     username: 'Emily',
     gender: 'Female',
     email_Address: 'emily.johnson@example.com',
@@ -32,7 +33,7 @@ const  users: Customer[] = [
     occupation: 'Marketing Specialist',
   },
   {
-    id: "3",
+    id: '3',
     username: 'Michael',
     gender: 'Male',
     email_Address: 'michael.davis@example.com',
@@ -41,7 +42,7 @@ const  users: Customer[] = [
     occupation: 'Accountant',
   },
   {
-    id: "4",
+    id: '4',
     username: 'Sarah Thompson',
     gender: 'Female',
     email_Address: 'sarah.thompson@example.com',
@@ -50,7 +51,7 @@ const  users: Customer[] = [
     occupation: 'Teacher',
   },
   {
-    id: "5",
+    id: '5',
     username: 'David Miller',
     gender: 'Male',
     email_Address: 'david.miller@example.com',
@@ -59,7 +60,7 @@ const  users: Customer[] = [
     occupation: 'Lawyer',
   },
   {
-    id: "6",
+    id: '6',
     username: 'Jessica Wilson',
     gender: 'Female',
     email_Address: 'jessica.wilson@example.com',
@@ -68,7 +69,7 @@ const  users: Customer[] = [
     occupation: 'Graphic Designer',
   },
   {
-    id: "7",
+    id: '7',
     username: 'Christopher Clark',
 
     gender: 'Male',
@@ -79,7 +80,7 @@ const  users: Customer[] = [
     occupation: 'Engineer',
   },
   {
-    id: "8",
+    id: '8',
     username: 'Olivia Anderson',
 
     gender: 'Female',
@@ -90,7 +91,7 @@ const  users: Customer[] = [
     occupation: 'Nurse',
   },
   {
-    id: "9",
+    id: '9',
     username: 'Matthew White',
 
     gender: 'Male',
@@ -101,7 +102,7 @@ const  users: Customer[] = [
     occupation: 'Sales Manager',
   },
   {
-    id: "10",
+    id: '10',
     username: 'Sophia Martinez',
 
     gender: 'Female',
@@ -113,21 +114,18 @@ const  users: Customer[] = [
   },
 ];
 
-
-
 @Component({
   selector: 'app-searching',
   templateUrl: './searching.component.html',
-  styleUrls: ['./searching.component.css']
+  styleUrls: ['./searching.component.css'],
 })
 export class SearchingComponent {
- 
   users: Customer[] = users;
 
   filteredUsers: Customer[] = users;
   searchSubject = new Subject<any>();
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.searchSubject
       .pipe(
         debounceTime(300),
@@ -141,13 +139,17 @@ export class SearchingComponent {
             user.email_Address.toLowerCase().includes(searchTerm) ||
             user.gender.toLowerCase().includes(searchTerm) ||
             user.phone_Number.toLowerCase().includes(searchTerm)
-            
         );
       });
   }
 
+  data: any;
 
-
+  getdata() {
+    this.http.get('http://localhost:3000/rxjs_searching').subscribe((res) => {
+      this.data = res;
+    });
+  }
 
   search(event: any) {
     const searchTerm = event.target.value;

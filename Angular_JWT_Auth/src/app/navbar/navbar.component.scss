@@ -1,0 +1,16 @@
+.navbar a {
+    color: black;
+  }
+  .nav-item a {
+    border-top: 5px solid transparent;
+  }
+  .nav-item.active a,
+  .nav-item a:hover {
+    border-top: 5px solid #007bff;
+    color: #007bff;
+  }
+.logo{
+    cursor: pointer;
+}
+  
+  
