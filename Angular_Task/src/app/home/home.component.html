@@ -1,1 +1,9 @@
-<button  (click)="logout()" class="btn btn-primary">Logout</button>
+<div *ngIf="isLoggedIn$ | async; else loginTemplate">
+  <!-- Content for logged-in users -->
+  <h2>Welcome, User!</h2>
+</div>
+<ng-template #loginTemplate>
+  <!-- Content for non-logged-in users -->
+  <h2>Please log in <button class="btn btn-primary" routerLink="/login">Login</button> </h2>
+  <!-- Your login form here -->
+</ng-template>

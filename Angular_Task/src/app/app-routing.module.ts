@@ -27,7 +27,7 @@ const routes: Routes = [
   { path: 'web-api', component: WebApiComponent },
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: 'home', component: HomeComponent, canActivate: [authenticateGuard] },
+  { path: 'home', component: HomeComponent,canActivate: [authenticateGuard] },
   { path: 'mat-table', component: MaterialDataTabelComponent },
   { path: 'startup', component: StartupComponent },
   { path: 'module-task', component: ModuleTaskComponent },
