@@ -5,7 +5,6 @@ import { CanActivateFn, Router } from '@angular/router';
 export class HomeGuard {
   constructor(private router: Router) {}
   canActivate(currentUser: any) {
-    
     if (currentUser) {
       return true;
     } else {
@@ -14,8 +13,7 @@ export class HomeGuard {
   }
 }
 
-
 export const homeAuthGuard: CanActivateFn = (route, state) => {
-  let token = JSON.parse(localStorage.getItem('myregis') || '');
+  let token = localStorage.getItem('token') ;
   return inject(HomeGuard).canActivate(token);
 };

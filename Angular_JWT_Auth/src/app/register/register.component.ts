@@ -1,14 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { HTTPConnectService } from '../Authenticate/httpconnect.service';
 
-
 export class RegistrationForm {
   id: number = 0;
-  firstName: string = '';
-  lastName: string = '';
-  userName: string = '';
-  role: string = '';
+  firstname: string = '';
+  lastname: string = '';
+  username: string = '';
+  
   password: string = '';
   number: string = '';
   email: string = '';
@@ -17,29 +16,27 @@ export class RegistrationForm {
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
-  styleUrls: ['./register.component.scss']
+  styleUrls: ['./register.component.scss'],
 })
-export class RegisterComponent {
-  constructor(private _api: HTTPConnectService
-  ) {}
+export class RegisterComponent implements OnInit {
+  constructor(private _api: HTTPConnectService) {}
+  ngOnInit(): void {}
   userForm: RegistrationForm = new RegistrationForm();
   registrationForm = new FormGroup({
-    firstName: new FormControl(),
-    lastName: new FormControl(),
-    userName: new FormControl(),
+    firstname: new FormControl(),
+    lastname: new FormControl(),
+    username: new FormControl(),
     role: new FormControl(),
     password: new FormControl(),
     number: new FormControl(),
     email: new FormControl(),
   });
 
-  
-
   addregister() {
-    this.userForm.firstName = this.registrationForm.value.firstName;
-    this.userForm.lastName = this.registrationForm.value.lastName;
-    this.userForm.userName = this.registrationForm.value.userName;
-    this.userForm.role = this.registrationForm.value.role;
+    this.userForm.firstname = this.registrationForm.value.firstname;
+    this.userForm.lastname = this.registrationForm.value.lastname;
+    this.userForm.username = this.registrationForm.value.username;
+   
     this.userForm.password = this.registrationForm.value.password;
     this.userForm.number = this.registrationForm.value.number;
     this.userForm.email = this.registrationForm.value.email;

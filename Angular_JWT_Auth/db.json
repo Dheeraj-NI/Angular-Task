@@ -15,5 +15,62 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "token_register": [
+    {
+      "id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "username": "john",
+      "password": "john",
+      "number": 47578923479,
+      "email": "sdjkfhaskljscb"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "username": "user1",
+      "password": "password1"
+    },
+    {
+      "id": 2,
+      "username": "user2",
+      "password": "password2"
+    },
+    {
+      "id": 3,
+      "firstname": "John",
+      "lastname": "Doe",
+      "username": "john",
+      "password": "john"
+    },
+    {
+      "id": 4,
+      "firstname": "Smith",
+      "lastname": "Doe",
+      "username": "smith",
+      "password": "smith",
+      "number": 43784298974,
+      "email": "jflaslsdjdn"
+    },
+    {
+      "id": 5,
+      "firstname": "John",
+      "lastname": "Doe",
+      "username": "john",
+      "password": "123",
+      "number": 283787367,
+      "email": "fjskcsckn"
+    },
+    {
+      "id": 6,
+      "firstname": "Smith",
+      "lastname": "Mane",
+      "username": "smith",
+      "password": "456",
+      "number": 26374784,
+      "email": "djfhaslfkh"
+    }
+  ]
 }

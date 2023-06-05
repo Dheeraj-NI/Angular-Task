@@ -6,20 +6,17 @@ import { AngMaterialModule } from '../ang-material/ang-material.module';
 import { LoginComponent } from './login.component';
 import { RegisterComponent } from '../register/register.component';
 
-const routes: Routes = [
-  // {path:'login',component:LoginComponent}
-  // {path:'register',component:RegisterComponent},
-];
+const routes: Routes = [{ path: '', component: LoginComponent }];
 
 @NgModule({
   declarations: [LoginComponent],
   imports: [
     CommonModule,
     AngMaterialModule,
-    RouterModule.forRoot(routes),
+
+    RouterModule.forChild(routes),
     FormsModule,
     ReactiveFormsModule,
   ],
-  
 })
 export class LoginModule {}

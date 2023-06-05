@@ -9,6 +9,6 @@ export class HTTPConnectService {
 
   constructor(private _http: HttpClient, private router: Router) {}
   saveData(data: any) {
-    return this._http.post('http://localhost:3000/register', data);
+    return this._http.post('http://localhost:3000/users', data);
   }
 }

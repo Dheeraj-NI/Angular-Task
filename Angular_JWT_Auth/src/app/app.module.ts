@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HTTPConnectService } from './Authenticate/httpconnect.service';
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
+import { HomeGuard } from './Authenticate/home-auth.guard';
 
 @NgModule({
   declarations: [AppComponent, NavbarComponent,],
@@ -24,8 +25,8 @@ import { RegisterComponent } from './register/register.component';
     
     
   ],
-  exports: [],
-  providers: [HTTPConnectService],
+  exports: [AngMaterialModule],
+  providers: [HTTPConnectService, HomeGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

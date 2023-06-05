@@ -6,25 +6,22 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AngMaterialModule } from '../ang-material/ang-material.module';
 import { RouterModule, Routes } from '@angular/router';
 import { AppModule } from '../app.module';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
 
-
-
-const routes: Routes = [
- 
-  {path:'register',component:RegisterComponent},
-];
+const routes: Routes = [{ path: '', component: RegisterComponent }];
 @NgModule({
   declarations: [RegisterComponent],
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     FormsModule,
     ReactiveFormsModule,
     AngMaterialModule,
-    RouterModule.forRoot(routes),
+
+    RouterModule.forChild(routes),
+    MatFormFieldModule,
+    MatInputModule,
   ],
-  providers:[]
-  
+  providers: [],
 })
-export class RegisterModule {
-
-
-}
+export class RegisterModule {}
