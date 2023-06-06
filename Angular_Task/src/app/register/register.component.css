@@ -26,6 +26,7 @@ form {
   border: 2px solid black;
   padding: 20px;
   border-radius: 7px;
+  background: #fff;
 }
 .button{
     align-items: center;

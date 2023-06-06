@@ -32,6 +32,9 @@ import { ThemeComponent } from './theme/theme.component';
 import { DatatableComponent } from './datatable/datatable.component';
 import { DataTablesModule } from 'angular-datatables';
 import { TimerComponent } from './timer/timer.component';
+import { ModuleService } from './Core/module.service';
+import { HomeModule } from './home/home.module';
+import {MatToolbarModule} from  '@angular/material/toolbar'
 
 @NgModule({
   declarations: [
@@ -47,7 +50,7 @@ import { TimerComponent } from './timer/timer.component';
     DirDirective,
     RegisterComponent,
     LoginComponent,
-    HomeComponent,
+    
     MaterialDataTabelComponent,
     SearchingComponent,
     ThemeComponent,
@@ -70,9 +73,11 @@ import { TimerComponent } from './timer/timer.component';
     MatTableModule,
     MatButtonModule,
     MatRadioModule,
-    DataTablesModule
+    DataTablesModule,
+    MatToolbarModule,
+    HomeModule
   ],
-  providers: [ApiServiceService, Permission, LoginComponent],
+  providers: [ApiServiceService, Permission, LoginComponent, ModuleService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

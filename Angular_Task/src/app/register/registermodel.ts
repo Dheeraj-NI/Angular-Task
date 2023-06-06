@@ -3,6 +3,7 @@ export class RegistrationForm {
   firstName: string = '';
   lastName: string = '';
   userName: string = '';
+  role: string = '';
   password: string = '';
   number: string = '';
   email: string = '';

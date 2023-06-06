@@ -3,6 +3,7 @@ import { FormControl, FormGroup } from '@angular/forms';
 import { ApiServiceService } from '../Core/api-service.service';
 import { Router } from '@angular/router';
 import { BehaviorSubject, Observable } from 'rxjs';
+import { ModuleService } from '../Core/module.service';
 
 @Component({
   selector: 'app-login',
@@ -10,13 +11,12 @@ import { BehaviorSubject, Observable } from 'rxjs';
   styleUrls: ['./login.component.css'],
 })
 export class LoginComponent implements OnInit {
-  private token: string = '';
-  private tokenSubject: BehaviorSubject<string | null> = new BehaviorSubject<
-    string | null
-  >(null);
-  public token$: Observable<string | null> = this.tokenSubject.asObservable();
-
-  constructor(private api: ApiServiceService, private route: Router) {}
+  
+  constructor(
+    private api: ApiServiceService,
+    private route: Router,
+    private module_service: ModuleService
+  ) {}
   loginPage = new FormGroup({
     username: new FormControl(''),
     password: new FormControl(''),
@@ -43,15 +43,24 @@ export class LoginComponent implements OnInit {
     });
   }
 
-  getToken() {
-    this.token = JSON.parse(localStorage.getItem('myregis') || '');
-
-    this.tokenSubject.next(this.token);
+  module_login() {
+    if (
+      this.module_service.login(
+        this.loginPage.value.username,
+        this.loginPage.value.password
+      )
+    ) {
+      this.route.navigate(
+        this.module_service.userRole == 'admin'
+          ? ['/home']
+          : this.module_service.userRole == 'supervisor'
+          ? ['/home']
+          : this.module_service.userRole == 'user'
+          ? ['/home']
+          : ['/login']
+      );
+    }
   }
 
-  deleteToken() {
-    localStorage.removeItem('myuser');
-    this.tokenSubject.next(null);
-    
-  }
+  
 }

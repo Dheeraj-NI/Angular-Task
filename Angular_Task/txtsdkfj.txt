@@ -1,0 +1,32 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="../app.component.html">Angular Task</a>
+
+  <a routerLink="/module-task" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir
+    >Module Task</a
+  >
+  <a routerLink="/web-api" *ngIf="!isHomeRoute()" class="mr-sm-2">Web Api</a>
+  <a routerLink="/login" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir
+    >Auth Guard</a
+  >
+  <a routerLink="/mat-table" *ngIf="!isHomeRoute()" class="mr-sm-2"
+    >Mat DataTable</a
+  >
+  <a routerLink="/foreach" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir
+    >For Each</a
+  >
+  <a routerLink="/parent" *ngIf="!isHomeRoute()" class="mr-sm-2">Parent</a>
+  <a routerLink="/pipe" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir>Pipe</a>
+  <a routerLink="/theme" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir>Theme</a>
+  <a routerLink="/datatable" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir
+    >Datatable</a
+  >
+  <a routerLink="/search" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir
+    >Searching Rxjs</a
+  >
+  <a routerLink="/timer" *ngIf="!isHomeRoute()" class="mr-sm-2" appDir
+    >LifeCycle</a
+  >
+  <a href="">Category</a>
+
+  <a *ngIf="isHomeRoute()" class="mr-sm-2 cursor"  (click)="logout()" appDir>Logout</a>
+</nav>

@@ -9,23 +9,28 @@ import { ApiServiceService } from '../Core/api-service.service';
   styleUrls: ['./register.component.css'],
 })
 export class RegisterComponent implements OnInit {
-  constructor(private formBuilder: FormBuilder,private api: ApiServiceService) {}
+  constructor(
+    private formBuilder: FormBuilder,
+    private api: ApiServiceService
+  ) {}
   userForm: RegistrationForm = new RegistrationForm();
   registrationForm = new FormGroup({
     firstName: new FormControl(),
     lastName: new FormControl(),
     userName: new FormControl(),
+    role: new FormControl(),
     password: new FormControl(),
     number: new FormControl(),
     email: new FormControl(),
   });
 
-  ngOnInit(): void { }
-  
+  ngOnInit(): void {}
+
   addregister() {
     this.userForm.firstName = this.registrationForm.value.firstName;
     this.userForm.lastName = this.registrationForm.value.lastName;
     this.userForm.userName = this.registrationForm.value.userName;
+    this.userForm.role = this.registrationForm.value.role;
     this.userForm.password = this.registrationForm.value.password;
     this.userForm.number = this.registrationForm.value.number;
     this.userForm.email = this.registrationForm.value.email;
@@ -36,7 +41,7 @@ export class RegisterComponent implements OnInit {
       },
       (err) => {
         alert('Something went wrong');
-      })
-}
-
+      }
+    );
+  }
 }

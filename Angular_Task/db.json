@@ -31,6 +31,36 @@
       "password": "punya",
       "number": 9872635281,
       "email": "punya@gmail.com"
+    },
+    {
+      "id": 2,
+      "firstName": "John",
+      "lastName": "Doe",
+      "userName": "john",
+      "role": "user",
+      "password": "john",
+      "number": 7846276,
+      "email": "djhfksjks"
+    },
+    {
+      "id": 3,
+      "firstName": "Smith",
+      "lastName": "Mock",
+      "userName": "smith",
+      "role": "admin",
+      "password": "smith",
+      "number": 7235934587,
+      "email": "djfhadksldj"
+    },
+    {
+      "id": 4,
+      "firstName": "mick",
+      "lastName": "Watson",
+      "userName": "mick",
+      "role": "supervisor",
+      "password": "mick",
+      "number": 7462834786,
+      "email": "djahkajfds"
     }
   ],
   "customerDetails": [
